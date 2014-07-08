@@ -1,0 +1,126 @@
+* {
+	/*outline: 1px solid red;*/
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	font: 400 1em/1.5em 'Droid Sans', sans-serif;
+}
+
+.wrapper {
+	max-width: 550px;
+	min-width: 550px;
+	max-height: 550px;
+	min-height: 550px;
+	margin: 10% auto 0 auto;
+	border: 1px solid green;
+}
+
+.header {
+	border-bottom: 1px solid red;
+	height: 50px;
+}
+#newGame {
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.scoreList {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.questions {
+	text-align: center;
+}
+
+.questions h3 {
+	margin-bottom: 20px;
+}
+
+.questions > p {
+	line-height: 1.2em;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding:10px;
+}
+
+.answer {
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+
+.btn {
+	width: 230px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px
+}
+
+.btn:hover {
+	background-color: #fcfcfc;
+	cursor: pointer;
+}
+
+.btn > p {
+	font-size: 18px;
+}
+.answer-sign {
+	margin-right: 5px;
+	font-weight: bold;
+	margin-bottom: -3px;
+}
+
+.answer-number {
+	margin-left: 5px;
+	color: green;
+
+}
+.result {
+	display: none;
+}
+/*
+	Typography
+**************************************************/
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: .8em;
+}
+
+h6 {
+	font-size: .7em;
+}
+
+/*
+	Clearfix
+**************************************************/
+
+.group:afet {
+	content: " ";
+	display: table;
+	clear: both;
+}
