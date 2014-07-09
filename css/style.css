@@ -7,6 +7,7 @@
 
 body {
 	font: 400 1em/1.5em 'Droid Sans', sans-serif;
+	position: relative;
 }
 
 .wrapper {
@@ -21,6 +22,7 @@ body {
 .header {
 	border-bottom: 1px solid red;
 	height: 50px;
+	text-align: center;
 }
 #newGame {
 	float: left;
@@ -37,6 +39,7 @@ body {
 
 .questions {
 	text-align: center;
+	height: 150px;
 }
 
 .questions h3 {
@@ -82,10 +85,55 @@ body {
 .answer-number {
 	margin-left: 5px;
 	color: green;
-
 }
+
 .result {
 	display: none;
+}
+
+.result  {
+	text-align: center;
+	margin: 0 auto;
+	width: 350px;
+}
+
+.result >  h1 {
+	padding-top: 50px;
+	height: 150px;
+	border: 1px solid #fcfcfc;
+	border-radius: 10px;
+} 
+.correct {
+	background-color: green;
+	
+}
+.wrong {
+	background-color: red;
+/*	display:none;*/
+}
+
+#overlay {
+	background-color: gray;
+	border-radius: 5px;
+	position: absolute;
+	height: 600px;
+	z-index: 100;
+	width: 600px;
+	top: 0;
+	left:50%; ;
+	right: 0;
+	margin: 0 0 0 -300px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#overlay h1 {
+	margin-bottom: 20px;
+}
+.btn-start {
+	width: 150px;
+	height: 70px;
+	margin-top: 50px;
 }
 /*
 	Typography

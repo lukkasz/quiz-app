@@ -10,15 +10,18 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header group">
-			<a href="#" id="newGame">New Game</a>
-			<div class="scoreList">
-				<h2>Score<span id="score">10</span></h2>
+		<div id="overlay">
+				<h1>Congradulation!</h1>
+				<!--<h2>You finished quiz with score: <span class="score">0</span></h2>-->
+				<button class="btn-start">
+					restart
+				</button>
 			</div>
+		<header class="header group">
+			<h3>Question <span id="question-count">1/5</span></h3>
 		</header>
 		<div class="content">	
 			<div class="questions">
-				<h3>Question<span id="question-count">1/5</span></h3>
 				<p id="question">
 					Cumque eaque voluptatem placeat vero, voluptatibus facere officiis obcaecati, nostrum porro excepturi sunt recusandae similique veritatis. Esse temporibus nisi, nobis natus ipsam ?
 				</p>
@@ -39,14 +42,9 @@
 				</button>
 			</div>
 			<div class="result">
-				<button class="btn-correct">
-					<h1>Correct<h1>
-				</button>
-				<hr>
-				<button class="btn-next">
-					<h2>Next</h2>
-				</button>
+				<h1></h1>
 			</div>
+			
 		</div>	
 	</div>
 </body>
