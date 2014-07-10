@@ -68,33 +68,43 @@ $(document).ready(function(){
 	var tempAnswers = ['A','B','C','D'];
 	var questionNumber;
 	var score;
+	var $answerButton = $('.answer-btn');
+	var $startButton = $('#btn-start');
+	var $wrapper = $('.wrapper');
+	var $result = $('.result');
+	var $overlay = $('#overlay');
 
 	function startQuiz(questionNumber) {
+		$answerButton.attr('disabled', false);
 		tempQuestion = questionArray[questionNumber];
 		$('#question').text(tempQuestion.question);
 		$('#question-count').text(questionNumber+1 + " / " + questionArray.length);
 		for (var j = 0; j < tempAnswers.length; j++) {
-			$('.answer'+j).text(tempQuestion.answerObject[tempAnswers[j]])
+			$('#answer'+j).text(tempQuestion.answerObject[tempAnswers[j]])
 		}
 	};
 
 	// Setup initial for overlay window
-	$('#overlay').find('h1').text("Welcome to Jacascript Quiz!");
-	$('#overlay').find('.btn-start').text("Start Quiz");
-	$('.btn-start').on('click', function(){
-		$('#overlay').find('h2').remove();
+	$wrapper.hide();
+	$overlay.find('h1').text("Welcome to JavaScript Quiz!");
+	$($startButton).text("Start!!!")
+
+	$startButton.on('click', function(){
+		$overlay.find('h2').remove();
 		score = 0;
 		questionNumber = 0;
 		startQuiz(questionNumber);
-		$('#overlay').hide();
+		$overlay.hide();
+		$wrapper.fadeIn();
 	});
-	//startQuiz(questionNumber);
 	
-	$('.btn').on('click', function(){
-		var ans = $(this).find('.answer-sign').text();
-		var $h1 = $('.result').find('h1');
-		$('.result').show();
-		if(ans.substring(0,1) === tempQuestion.answer) {
+	$answerButton.on('click', function(){
+		var answerSign = $(this).find('.answer-sign').text();
+		var $h1 = $result.find('h1');
+		$result.fadeIn("fast");
+
+		// From selected Answer we strip out Letter example ("A:")->("A") 
+		if(answerSign.substring(0,1) === tempQuestion.answer) {
 			score += 10;
 			$h1.text("Correct!");
 			$h1.removeClass('wrong');
@@ -104,21 +114,28 @@ $(document).ready(function(){
 			$h1.removeClass('correct');
 			$h1.addClass('wrong');
 		}
+
+		$answerButton.attr('disabled', true);
+		$answerButton.addClass('not-allowed');
+		$(this).addClass('selected');
+
 	});
 
-	$('.result').on('click', function(){
+	$result.on('click', function(){
 		questionNumber++;
-		// make questionNumber validation
-		$('.result').hide();
+		$answerButton.attr('disabled', false);
+		$answerButton.removeClass('not-allowed selected');
+		$result.hide();
 		if (questionNumber < questionArray.length) {
 			startQuiz(questionNumber);
 		} 
 		else {
-			$('#overlay').find('h1').text("Congragulation!!!");
-			$('.btn-start').before('<h2>You finished quiz with score: <span class="score"></span></h2>');
-			$('#overlay').find('.btn-start').text("Restart Quiz");
+			$overlay.find('h1').text("Congratulations!!!");
+			$startButton.before('<h2>Your Score: <span class="score"></span></h2>');
+			$startButton.text("Restart");
 			$('.score').text(score);
-			$('#overlay').show();
+			$wrapper.hide();
+			$overlay.fadeIn();
 		}
 		
 	});
@@ -127,10 +144,3 @@ $(document).ready(function(){
   
 });
 
-
-/*
-for(var i = 1; window["question"+i] !== undefined; i++) {
-  console.log(window["question"+i].question);
-  console.log(i);
- };
-*/

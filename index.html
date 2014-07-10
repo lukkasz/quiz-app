@@ -9,40 +9,38 @@
 	<script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
+	<div id="overlay">
+			<h1></h1>
+			<button id="btn-start" class="btn-start"></button>
+		</div>
 	<div class="wrapper">
-		<div id="overlay">
-				<h1>Congradulation!</h1>
-				<!--<h2>You finished quiz with score: <span class="score">0</span></h2>-->
-				<button class="btn-start">
-					restart
-				</button>
-			</div>
+		
 		<header class="header group">
-			<h3>Question <span id="question-count">1/5</span></h3>
+			<h3>Question <span id="question-count"></span></h3>
 		</header>
 		<div class="content">	
 			<div class="questions">
-				<p id="question">
-					Cumque eaque voluptatem placeat vero, voluptatibus facere officiis obcaecati, nostrum porro excepturi sunt recusandae similique veritatis. Esse temporibus nisi, nobis natus ipsam ?
-				</p>
+				<p id="question"></p>
 			</div>
 			<hr>
-			<div class="answer">
-				<button class="btn">
-					<p><span class="answer-sign">A&colon;</span><span class="answer0">Answer 1</span></p>	
+			<div class="answer-wrap">
+				<h2>Choose Your Answer</h2>
+				<button class="answer-btn">
+					<p><span class="answer-sign">A&colon;</span><span id="answer0" class="answer"></span></p>	
 				</button>
-				<button class="btn">
-					<p><span class="answer-sign">B&colon;</span><span class="answer1">Answer 2</span></p>	
+				<button class="answer-btn">
+					<p><span class="answer-sign">B&colon;</span><span id="answer1" class="answer"></span></p>	
 				</button>
-				<button class="btn">
-					<p><span class="answer-sign">C&colon;</span><span class="answer2">Answer 3</span></p>	
+				<button class="answer-btn">
+					<p><span class="answer-sign">C&colon;</span><span id="answer2" class="answer"></span></p>	
 				</button>
-				<button class="btn">
-					<p><span class="answer-sign">D&colon;</span><span class="answer3">Answer 4</span></p>	
+				<button class="answer-btn">
+					<p><span class="answer-sign">D&colon;</span><span id="answer3" class="answer"></span></p>	
 				</button>
 			</div>
 			<div class="result">
 				<h1></h1>
+				<h6>(Click for next question!)</h6>
 			</div>
 			
 		</div>	
