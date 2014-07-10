@@ -1,0 +1,257 @@
+/**************************************************
+	Global 
+**************************************************/
+
+* {
+	/*outline: 1px solid red;*/
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	font: 400 1em/1.5em 'Droid Sans', sans-serif;
+	position: relative;
+	background-color: #546F77;
+}
+
+hr {
+	/*color: #62AFDD;*/
+	border: 1px solid #62AFDD;
+	height: 0;
+}
+
+.wrapper {
+	max-width: 550px;
+	min-width: 550px;
+	max-height: 550px;
+	min-height: 550px;
+	margin: 10% auto 0 auto;
+	border: 2px solid #62AFDD;
+	border-radius: 5px;
+	background-color: #dfeff8;
+}
+
+
+
+/**************************************************
+	Header 
+**************************************************/
+
+.header {
+	border-bottom: 1px solid #62AFDD;
+	height: 50px;
+	text-align: center;
+}
+
+
+.header h3 {
+	padding-top: 2%;
+	color: #A54713;
+	font-weight: bold;
+}
+
+#question-count {
+	color: #D88903;
+}
+
+/**************************************************
+	Questions 
+**************************************************/
+
+.questions {
+	text-align: center;
+	height: 150px;
+}
+
+.questions h3 {
+	margin-bottom: 20px;
+}
+
+.questions > p {
+	line-height: 1.2em;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding-top:10%;
+	color: #A54713;
+	font-weight: bold;
+}
+
+
+
+/**************************************************
+	Answers
+**************************************************/
+
+.answer-wrap {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.answer-wrap > h2 {
+	color:  #A54713;
+	margin-bottom: 3px;
+}
+
+.answer-sign {
+	margin-right: 5px;
+	font-weight: bold;
+	margin-bottom: -3px;
+}
+
+.answer-number {
+	margin-left: 5px;
+	color: green;
+}
+
+.answer {
+	color: #A54713;
+	font-weight: bold;
+}
+
+
+.answer-btn {
+	width: 230px;
+	height: 50px;
+	border: 2px solid #62AFDD;
+	background-color: #91C7E7;
+	border-radius: 10px;
+	margin: 10px;
+	cursor: pointer;
+
+}
+
+.answer-btn > p {
+	font-size: 12px;
+}
+
+
+/**************************************************
+	Results
+**************************************************/
+
+.result {
+	display: none;
+}
+
+.result  {
+	text-align: center;
+	margin: 0 auto;
+	width: 350px;
+	cursor: pointer;
+}
+
+.result >  h1 {
+	padding-top: 50px;
+	height: 140px;
+	border: 1px solid #fcfcfc;
+	border-radius: 10px;
+}
+
+.result h6 {
+	margin-top: -55px;
+}
+
+
+.correct {
+	background-color: green;
+	
+}
+.wrong {
+	background-color: red;
+/*	display:none;*/
+}
+
+.not-allowed {
+	cursor: not-allowed;
+}
+
+.selected {
+	background-color: #527F9A;
+	color: #91C7E7;
+}
+#overlay {
+	background-color: #dfeff8;
+	border: 2px solid #62AFDD;
+	border-radius: 5px;
+	position: absolute;
+	max-width: 600px;
+	min-width: 600px;
+	max-height: 300px;
+	min-height: 300px;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 10% auto;
+	text-align: center;
+	padding-top: 30px;
+	color: #A54713;
+}
+
+.score {
+	display: block;
+	margin-top: 25px;
+	font-size: 44px;
+	font-weight: bold;
+	color: green;
+	margin-bottom: -25px;
+}
+
+
+/**************************************************
+	Overlay Start-Restart
+**************************************************/
+
+#overlay h1 {
+	margin-bottom: 20px;
+}
+.btn-start {
+	width: 150px;
+	height: 70px;
+	margin-top: 50px;
+	border: 2px solid #62AFDD;
+	background-color: #91C7E7;
+	border-radius: 10px;
+	color: #A54713;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/*
+	Typography
+**************************************************/
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: .8em;
+}
+
+h6 {
+	font-size: .7em;
+}
+
+/*
+	Clearfix
+**************************************************/
+
+.group:afet {
+	content: " ";
+	display: table;
+	clear: both;
+}

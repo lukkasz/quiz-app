@@ -1,0 +1,56 @@
+1. Which of the following is not a valid javaScript variable name?
+
+2. Which of th efollowing is used in javaScript to insert special characters
+
+3. Fallsy wariable
+
+4. What is th ealternate name for javascript? ECMAscript
+
+5. which of the following is correct to write "Helo Word" on the web page?
+	System.out.println(“Hello World”)
+	print(“Hello World”)
+	document.write(“Hello World”)
+	response.write(“Hello World”)
+
+6. Which of the following are capable of Javascript function?
+	Returning multiple values
+	Accepting parameters and returning values
+	Accepting parameters
+	all of the above 
+
+7. Which is the correct way to write a javascript array?
+	var txt = new Array(1:"arr",2:"kim",3:"jim")
+	var txt = new Array:1=(" arr ")2=("kim")3=("jim")
+	var txt = new Array("arr ","kim","jim")
+	var txt = new Array=" arr ","kim","jim"
+
+8. How to append a value to an array of Javascript
+	arr[arr.length] = value
+	arr[arr.length+1] = new Arrays()
+	arr[arr.length-1] = value
+	arr[arr.length*1] = value
+
+9. Inside which HTML element do we put the JavaScript?
+	<js>
+	<scripting>
+	<javascript>
+	<script>
+
+
+10. What is the correct syntax for referring to an external script called "xxx.js"?
+	<script name="xxx.js">
+	<script src="xxx.js">
+	<script href="xxx.js">
+
+11. How do you write "Hello World" in an alert box?
+
+
+13. How does a FOR loop start?
+	for (i <= 5; i++)
+	for (i = 0; i <= 5; i++)
+	for (i = 0; i <= 5)
+	for i = 1 to 5
+
+14. How can you add a comment in a JavaScript?
+15. How do you create a function in JavaScript?
+16. What is th eevent that fires when the form elements loses the focus?

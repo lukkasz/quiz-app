@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Quiz Game</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div id="overlay">
+			<h1></h1>
+			<button id="btn-start" class="btn-start"></button>
+		</div>
+	<div class="wrapper">
+		
+		<header class="header group">
+			<h3>Question <span id="question-count"></span></h3>
+		</header>
+		<div class="content">	
+			<div class="questions">
+				<p id="question"></p>
+			</div>
+			<hr>
+			<div class="answer-wrap">
+				<h2>Choose Your Answer</h2>
+				<button class="answer-btn">
+					<p><span class="answer-sign">A&colon;</span><span id="answer0" class="answer"></span></p>	
+				</button>
+				<button class="answer-btn">
+					<p><span class="answer-sign">B&colon;</span><span id="answer1" class="answer"></span></p>	
+				</button>
+				<button class="answer-btn">
+					<p><span class="answer-sign">C&colon;</span><span id="answer2" class="answer"></span></p>	
+				</button>
+				<button class="answer-btn">
+					<p><span class="answer-sign">D&colon;</span><span id="answer3" class="answer"></span></p>	
+				</button>
+			</div>
+			<div class="result">
+				<h1></h1>
+				<h6>(Click for next question!)</h6>
+			</div>
+			
+		</div>	
+	</div>
+</body>
+</html>
